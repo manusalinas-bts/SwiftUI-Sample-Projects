@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #2 in MainTableController.tableView(_:cellForRowAt:):MainTableController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "item.title">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainTableController.tableView(_:heightForRowAt:):MainTableController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UITableView.automaticDimension">
+            </PersistentString>
+            <PersistentString
+               value = "tableView.rowHeight">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
