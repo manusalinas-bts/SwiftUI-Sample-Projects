@@ -4,15 +4,15 @@
 
 import Foundation
 
-@MainActor
-final class SampleViewModel: ObservableObject {
+@Observable
+final class SampleViewModel {
     private let client = ApiClient()
     
-    @Published var items: [ToDoItem] = []
-    @Published var isProgress: Bool = false
+    var items: [ToDoItem] = []
+    var isProgress: Bool = false
     
     private var itemsBackup: [ToDoItem] = []
-    @Published var searchText = "" {
+    var searchText = "" {
         didSet {
             search(searchText)
         }

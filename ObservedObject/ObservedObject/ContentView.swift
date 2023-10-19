@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-class UserProgress: ObservableObject {
-    @Published var score = 0
+@Observable
+class UserProgress {
+    var score = 0
 }
 
 struct InnerView: View {
-    @ObservedObject var progress: UserProgress
+    @Bindable var progress: UserProgress
 
     var body: some View {
         Button("Increase") {
@@ -27,7 +28,7 @@ struct InnerView: View {
 }
 
 struct ContentView: View {
-    @StateObject var progress = UserProgress()
+    @State var progress = UserProgress()
     
     var body: some View {
         VStack {

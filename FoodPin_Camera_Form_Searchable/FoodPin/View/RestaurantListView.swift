@@ -42,7 +42,7 @@ struct RestaurantListView: View {
         if searchText.isEmpty {
             return restaurants
         } else {
-            return restaurants.filter({ $0.name.contains(searchText) })
+            return restaurants.filter({ $0.name.localizedCaseInsensitiveContains(searchText) })
         }
     }
     

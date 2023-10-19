@@ -29,12 +29,21 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Tortugas")
-            
+            .navigationDestination(
+                isPresented: $isActiveDetail) {
+                    DetalleView(item: selectedItem ?? "")
+
+                }
+
+/*
+ // Deprecated
             NavigationLink(
                 destination: DetalleView(item: selectedItem ?? ""),
                 isActive: $isActiveDetail,
                 label: { EmptyView() }
             )
+            */
+
         }
     }
 }
