@@ -6,21 +6,20 @@
 //
 
 import Foundation
-import Combine
+import Observation
 import UIKit
 
-class RestaurantFormViewModel: ObservableObject {
-    
-    // Input
-    @Published var name: String = ""
-    @Published var type: String = ""
-    @Published var location: String = ""
-    @Published var phone: String = ""
-    @Published var description: String = ""
-    @Published var image: UIImage = UIImage()
-       
+@Observable
+final class RestaurantFormViewModel {
+    var name: String = ""
+    var type: String = ""
+    var location: String = ""
+    var phone: String = ""
+    var description: String = ""
+    var image: UIImage = UIImage(named: "newphoto")!
+
     init(restaurant: Restaurant? = nil) {
-        
+
         if let restaurant = restaurant {
             self.name = restaurant.name
             self.type = restaurant.type
@@ -29,6 +28,6 @@ class RestaurantFormViewModel: ObservableObject {
             self.description = restaurant.summary
             self.image = UIImage(data: restaurant.image) ?? UIImage()
         }
-        
+
     }
 }

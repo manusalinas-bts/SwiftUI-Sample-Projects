@@ -21,6 +21,9 @@
 		F4C0D11A26F9C46300AC5088 /* RestaurantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0D11926F9C46300AC5088 /* RestaurantListView.swift */; };
 		F4C0D11C26F9C46500AC5088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C0D11B26F9C46500AC5088 /* Assets.xcassets */; };
 		F4C0D11F26F9C46500AC5088 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4C0D11E26F9C46500AC5088 /* Preview Assets.xcassets */; };
+		FF7FCF502AF30ACE00F507B7 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FCF4F2AF30ACE00F507B7 /* FormTextField.swift */; };
+		FF7FCF522AF30ADA00F507B7 /* FormTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FCF512AF30ADA00F507B7 /* FormTextView.swift */; };
+		FF7FCF542AF30D0200F507B7 /* BasicTextImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7FCF532AF30D0200F507B7 /* BasicTextImageRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		F4C0D11926F9C46300AC5088 /* RestaurantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
 		F4C0D11B26F9C46500AC5088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4C0D11E26F9C46500AC5088 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF7FCF4F2AF30ACE00F507B7 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		FF7FCF512AF30ADA00F507B7 /* FormTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextView.swift; sourceTree = "<group>"; };
+		FF7FCF532AF30D0200F507B7 /* BasicTextImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextImageRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,10 @@
 		F463E30F27019AD400F25C63 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF7FCF4E2AF30ABE00F507B7 /* Components */,
 				F4C0D11926F9C46300AC5088 /* RestaurantListView.swift */,
-				F463E3112701DD4C00F25C63 /* ActivityView.swift */,
 				F463E3132702C4EC00F25C63 /* RestaurantDetailView.swift */,
+				F463E3112701DD4C00F25C63 /* ActivityView.swift */,
 				F463E31F27057E0D00F25C63 /* MapView.swift */,
 				F463E321270AAF5500F25C63 /* ReviewView.swift */,
 				F463E323270D663400F25C63 /* NewRestaurantView.swift */,
@@ -147,6 +154,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FF7FCF4E2AF30ABE00F507B7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FF7FCF4F2AF30ACE00F507B7 /* FormTextField.swift */,
+				FF7FCF512AF30ADA00F507B7 /* FormTextView.swift */,
+				FF7FCF532AF30D0200F507B7 /* BasicTextImageRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,15 +237,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F463E322270AAF5500F25C63 /* ReviewView.swift in Sources */,
+				FF7FCF522AF30ADA00F507B7 /* FormTextView.swift in Sources */,
 				F463E32027057E0D00F25C63 /* MapView.swift in Sources */,
 				F4C0D11A26F9C46300AC5088 /* RestaurantListView.swift in Sources */,
 				F463E3142702C4EC00F25C63 /* RestaurantDetailView.swift in Sources */,
 				F463E3122701DD4C00F25C63 /* ActivityView.swift in Sources */,
 				F463E324270D663400F25C63 /* NewRestaurantView.swift in Sources */,
+				FF7FCF542AF30D0200F507B7 /* BasicTextImageRow.swift in Sources */,
 				F463E31E27042AE300F25C63 /* UIColor+Ext.swift in Sources */,
 				F4A5DF6D270DBA8F00AC7CAE /* ImagePicker.swift in Sources */,
 				F4C0D11826F9C46300AC5088 /* FoodPinApp.swift in Sources */,
 				F463E30E270182F900F25C63 /* Restaurant.swift in Sources */,
+				FF7FCF502AF30ACE00F507B7 /* FormTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -341,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -367,7 +387,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,7 +417,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

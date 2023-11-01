@@ -47,10 +47,9 @@ struct MapView: View {
     }
 }
 
-struct MapView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView(location: "54 Frith Street London W1D 4SL United Kingdom")
-    }
+#Preview {
+    MapView(location: "54 Frith Street London W1D 4SL United Kingdom")
+        .ignoresSafeArea()
 }
 
 struct AnnotatedItem: Identifiable {

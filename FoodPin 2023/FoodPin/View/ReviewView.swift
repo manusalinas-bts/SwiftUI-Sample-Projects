@@ -10,7 +10,6 @@ import SwiftUI
 struct ReviewView: View {
     @Binding var isDisplayed: Bool
     @State private var showRatings = false
-    
     var restaurant: Restaurant
     
     var body: some View {
@@ -48,7 +47,6 @@ struct ReviewView: View {
             VStack(alignment: .leading) {
                 
                 ForEach(Restaurant.Rating.allCases, id: \.self) { rating in
-                    
                     HStack {
                         Image(rating.image)
                         Text(rating.rawValue.capitalized)
@@ -72,8 +70,6 @@ struct ReviewView: View {
     }
 }
 
-struct ReviewView_Previews: PreviewProvider {
-    static var previews: some View {
-        ReviewView(isDisplayed: .constant(true), restaurant: (PersistenceController.testData?.first)!)
-    }
+#Preview {
+    ReviewView(isDisplayed: .constant(true), restaurant: (PersistenceController.testData?.first)!)
 }

@@ -42,15 +42,25 @@ struct NewRestaurantView: View {
                             self.showPhotoOptions.toggle()
                         }
                     
-                    FormTextField(label: "NAME", placeholder: "Fill in the restaurant name", value: .constant(""))
-                    
-                    FormTextField(label: "TYPE", placeholder: "Fill in the restaurant type", value: .constant(""))
-                    
-                    FormTextField(label: "ADDRESS", placeholder: "Fill in the restaurant address", value: .constant(""))
-                    
-                    FormTextField(label: "PHONE", placeholder: "Fill in the restaurant phone", value: .constant(""))
-                    
-                    FormTextView(label: "DESCRIPTION", value: .constant(""), height: 100)
+                    FormTextField(label: "NAME", 
+                                  placeholder: "Fill in the restaurant name",
+                                  value: .constant(""))
+
+                    FormTextField(label: "TYPE",
+                                  placeholder: "Fill in the restaurant type",
+                                  value: .constant(""))
+
+                    FormTextField(label: "ADDRESS",
+                                  placeholder: "Fill in the restaurant address",
+                                  value: .constant(""))
+
+                    FormTextField(label: "PHONE", 
+                                  placeholder: "Fill in the restaurant phone",
+                                  value: .constant(""))
+
+                    FormTextView(label: "DESCRIPTION",
+                                 value: .constant(""),
+                                 height: 100)
                 }
                 .padding()
                 
@@ -98,60 +108,6 @@ struct NewRestaurantView: View {
             }
         }
         
-    }
-}
-
-struct FormTextField: View {
-    let label: String
-    var placeholder: String = ""
-    
-    @Binding var value: String
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text(label.uppercased())
-                .font(.system(.headline, design: .rounded))
-                .foregroundColor(Color(.darkGray))
-            
-            TextField(placeholder, text: $value)
-                .font(.system(.body, design: .rounded))
-                .textFieldStyle(PlainTextFieldStyle())
-                .padding(10)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color(.systemGray5), lineWidth: 1)
-                )
-                .padding(.vertical, 10)
-                
-        }
-    }
-}
-
-struct FormTextView: View {
-    
-    let label: String
-    
-    @Binding var value: String
-    
-    var height: CGFloat = 200.0
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text(label.uppercased())
-                .font(.system(.headline, design: .rounded))
-                .foregroundColor(Color(.darkGray))
-            
-            TextEditor(text: $value)
-                .frame(maxWidth: .infinity)
-                .frame(height: height)
-                .padding(10)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color(.systemGray5), lineWidth: 1)
-                )
-                .padding(.top, 10)
-                
-        }
     }
 }
 

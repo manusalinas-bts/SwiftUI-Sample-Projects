@@ -24,6 +24,10 @@
 		F4B2A83F29013030009DACEC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2A83E29013030009DACEC /* Persistence.swift */; };
 		F4B2A842290130E1009DACEC /* FoodPin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4B2A840290130E1009DACEC /* FoodPin.xcdatamodeld */; };
 		F4B2A84529014FC0009DACEC /* RestaurantFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2A84429014FC0009DACEC /* RestaurantFormViewModel.swift */; };
+		FF5987E72AF310C300821775 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5987E62AF310C300821775 /* FormTextField.swift */; };
+		FF5987E92AF312CD00821775 /* FormTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5987E82AF312CD00821775 /* FormTextView.swift */; };
+		FF5987EB2AF3176E00821775 /* FullImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5987EA2AF3176E00821775 /* FullImageRow.swift */; };
+		FF5987ED2AF317D800821775 /* BasicTextImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5987EC2AF317D800821775 /* BasicTextImageRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		F4B2A83E29013030009DACEC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F4B2A841290130E1009DACEC /* FoodPin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodPin.xcdatamodel; sourceTree = "<group>"; };
 		F4B2A84429014FC0009DACEC /* RestaurantFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantFormViewModel.swift; sourceTree = "<group>"; };
+		FF5987E62AF310C300821775 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		FF5987E82AF312CD00821775 /* FormTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextView.swift; sourceTree = "<group>"; };
+		FF5987EA2AF3176E00821775 /* FullImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageRow.swift; sourceTree = "<group>"; };
+		FF5987EC2AF317D800821775 /* BasicTextImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextImageRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +88,11 @@
 			children = (
 				F4AFE4D028F92AA8006639B1 /* FoodPinApp.swift */,
 				F4AFE4EE28FF02E2006639B1 /* Info.plist */,
-				F4B2A84329014FAD009DACEC /* ViewModel */,
-				F4B2A81A290113C4009DACEC /* Util */,
-				F4AFE4EF28FF907D006639B1 /* Extensions */,
-				F4AFE4E228FBB859006639B1 /* Model */,
 				F4AFE4E828FEFBF1006639B1 /* Resources */,
+				F4AFE4EF28FF907D006639B1 /* Extensions */,
+				F4B2A81A290113C4009DACEC /* Util */,
+				F4AFE4E228FBB859006639B1 /* Model */,
+				F4B2A84329014FAD009DACEC /* ViewModel */,
 				F4AFE4E328FBB86E006639B1 /* View */,
 				F4AFE4D428F92AAA006639B1 /* Assets.xcassets */,
 				F4AFE4D628F92AAA006639B1 /* Preview Content */,
@@ -113,6 +121,7 @@
 		F4AFE4E328FBB86E006639B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF5987E52AF310A800821775 /* Components */,
 				F4AFE4D228F92AA8006639B1 /* RestaurantListView.swift */,
 				F4AFE4E428FC60B3006639B1 /* ActivityView.swift */,
 				F4AFE4E628FE4525006639B1 /* RestaurantDetailView.swift */,
@@ -162,6 +171,17 @@
 				F4B2A84429014FC0009DACEC /* RestaurantFormViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF5987E52AF310A800821775 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FF5987EC2AF317D800821775 /* BasicTextImageRow.swift */,
+				FF5987EA2AF3176E00821775 /* FullImageRow.swift */,
+				FF5987E62AF310C300821775 /* FormTextField.swift */,
+				FF5987E82AF312CD00821775 /* FormTextView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,12 +259,16 @@
 				F4B2A84529014FC0009DACEC /* RestaurantFormViewModel.swift in Sources */,
 				F4B2A83F29013030009DACEC /* Persistence.swift in Sources */,
 				F4AFE4F5290056D3006639B1 /* ReviewView.swift in Sources */,
+				FF5987E72AF310C300821775 /* FormTextField.swift in Sources */,
 				F4AFE4F328FFC9C0006639B1 /* MapView.swift in Sources */,
 				F4AFE4D328F92AA8006639B1 /* RestaurantListView.swift in Sources */,
 				F4AFE4E728FE4525006639B1 /* RestaurantDetailView.swift in Sources */,
+				FF5987ED2AF317D800821775 /* BasicTextImageRow.swift in Sources */,
 				F4AFE4E528FC60B3006639B1 /* ActivityView.swift in Sources */,
 				F4AFE4F72900EE61006639B1 /* NewRestaurantView.swift in Sources */,
 				F4AFE4F128FF9091006639B1 /* UIColor+Ext.swift in Sources */,
+				FF5987E92AF312CD00821775 /* FormTextView.swift in Sources */,
+				FF5987EB2AF3176E00821775 /* FullImageRow.swift in Sources */,
 				F4B2A81E29011905009DACEC /* ImagePicker.swift in Sources */,
 				F4AFE4D128F92AA8006639B1 /* FoodPinApp.swift in Sources */,
 				F4AFE4E128FBB6C5006639B1 /* Restaurant.swift in Sources */,
@@ -305,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -359,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -392,9 +416,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.FoodPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -421,9 +448,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.FoodPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

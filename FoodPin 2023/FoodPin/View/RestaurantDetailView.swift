@@ -12,7 +12,6 @@ struct RestaurantDetailView: View {
     @Environment(\.managedObjectContext) var context
     
     @State private var showReview = false
-    
     @ObservedObject var restaurant: Restaurant
     
     var body: some View {
@@ -99,7 +98,6 @@ struct RestaurantDetailView: View {
                 .controlSize(.large)
                 .padding(.horizontal)
                 .padding(.bottom, 20)
-                
             }
             
         }
@@ -135,7 +133,7 @@ struct RestaurantDetailView: View {
                 
             : nil
         )
-        .onChange(of: restaurant) { _ in
+        .onChange(of: restaurant) {
             if self.context.hasChanges {
                 try? self.context.save()
             }
@@ -143,13 +141,11 @@ struct RestaurantDetailView: View {
     }
 }
 
-struct RestaurantDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationStack {
-            RestaurantDetailView(restaurant: (PersistenceController.testData?.first)!)
-                .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-                
-        }
-        .accentColor(.white)
+#Preview {
+    NavigationStack {
+        RestaurantDetailView(restaurant: (PersistenceController.testData?.first)!)
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+
     }
+    .accentColor(.white)
 }

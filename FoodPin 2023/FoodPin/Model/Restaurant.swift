@@ -5,11 +5,9 @@
 //  Created by Simon Ng on 16/10/2022.
 //
 
-import Combine
 import CoreData
 
 public class Restaurant: NSManagedObject {
-    
     @NSManaged public var name: String
     @NSManaged public var type: String
     @NSManaged public var location: String
@@ -18,11 +16,9 @@ public class Restaurant: NSManagedObject {
     @NSManaged public var image: Data
     @NSManaged public var isFavorite: Bool
     @NSManaged public var ratingText: String?
-    
 }
 
 extension Restaurant {
-    
     enum Rating: String, CaseIterable {
         case awesome
         case good
