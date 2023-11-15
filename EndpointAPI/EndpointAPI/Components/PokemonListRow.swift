@@ -34,7 +34,7 @@ struct PokemonListRow: View {
             Task {
                 if imageUrl == nil {
                     if let id = URL(string: pokemon.url)!.lastPathComponent.components(separatedBy: "/").last {
-                        self.imageUrl = Constants.pokemonPictureUrl.replacingOccurrences(of: "{pokemonId}", with: id)
+                        self.imageUrl = Path().pokePic.replacingOccurrences(of: "{pokemonId}", with: id)
                         print(pokemon.name + " has been loaded!")
                     }
                 }

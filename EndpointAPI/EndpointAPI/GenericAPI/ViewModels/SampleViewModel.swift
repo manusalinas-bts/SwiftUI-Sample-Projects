@@ -13,7 +13,7 @@ final class PokemonViewModel: ObservableObject {
     
     // MARK: Remote Info
     private func getPokemons() async {
-        guard let urlData = URL(string: Constants.uri + "/pokemon") else {
+        guard let urlData = URL(string: Path.Pokemon().list) else {
             return
         }
         

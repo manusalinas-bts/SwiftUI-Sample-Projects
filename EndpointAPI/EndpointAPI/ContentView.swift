@@ -38,6 +38,12 @@ struct ContentView: View {
             }
             .listStyle(.inset)
             .padding([.horizontal], 8)
+            .refreshable {
+                Task {
+                    // * * * Via Generic API
+                    await viewModel.fetchPokemons()
+                }
+            }
         }
     }
 }

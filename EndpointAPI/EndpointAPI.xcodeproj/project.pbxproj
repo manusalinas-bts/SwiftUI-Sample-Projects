@@ -22,6 +22,8 @@
 		FF800BAA2ADF2BEF00C70037 /* GenericApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF800BA62ADF2BEF00C70037 /* GenericApi.swift */; };
 		FF800BAB2ADF2BEF00C70037 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF800BA72ADF2BEF00C70037 /* ApiError.swift */; };
 		FF800BAC2ADF2BEF00C70037 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF800BA82ADF2BEF00C70037 /* ApiClient.swift */; };
+		FF9A04DB2B02C05900FE7C71 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A04DA2B02C05900FE7C71 /* Environment.swift */; };
+		FF9A04DD2B02C40D00FE7C71 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A04DC2B02C40D00FE7C71 /* Path.swift */; };
 		FFCC44042AE0367C00B83FFA /* ProfileTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC44032AE0367C00B83FFA /* ProfileTestView.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		FF800BA62ADF2BEF00C70037 /* GenericApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericApi.swift; sourceTree = "<group>"; };
 		FF800BA72ADF2BEF00C70037 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		FF800BA82ADF2BEF00C70037 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		FF9A04DA2B02C05900FE7C71 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		FF9A04DC2B02C40D00FE7C71 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		FFCC44032AE0367C00B83FFA /* ProfileTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +82,7 @@
 				FF4F03AD2ADEF9BF00BE7BAC /* EndpointAPIApp.swift */,
 				FF4F03AF2ADEF9BF00BE7BAC /* ContentView.swift */,
 				FFCC44032AE0367C00B83FFA /* ProfileTestView.swift */,
+				FF9A04D92B02C01A00FE7C71 /* APIs */,
 				FF6D607F2AE6CF8900CB7FB2 /* Components */,
 				FF6D607A2AE6CE2000CB7FB2 /* Entities */,
 				FF800BAD2ADF2C0000C70037 /* GenericAPI */,
@@ -149,6 +154,15 @@
 				FF800BA32ADF2BEF00C70037 /* ViewModels */,
 			);
 			path = GenericAPI;
+			sourceTree = "<group>";
+		};
+		FF9A04D92B02C01A00FE7C71 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				FF9A04DA2B02C05900FE7C71 /* Environment.swift */,
+				FF9A04DC2B02C40D00FE7C71 /* Path.swift */,
+			);
+			path = APIs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +237,7 @@
 			files = (
 				FF800BAC2ADF2BEF00C70037 /* ApiClient.swift in Sources */,
 				FF800BAA2ADF2BEF00C70037 /* GenericApi.swift in Sources */,
+				FF9A04DD2B02C40D00FE7C71 /* Path.swift in Sources */,
 				FF4F03BC2ADEF9CC00BE7BAC /* NetworkingExecutor.swift in Sources */,
 				FF6D607E2AE6CE4D00CB7FB2 /* Models.swift in Sources */,
 				FF4F03B02ADEF9BF00BE7BAC /* ContentView.swift in Sources */,
@@ -232,6 +247,7 @@
 				FF4F03AE2ADEF9BF00BE7BAC /* EndpointAPIApp.swift in Sources */,
 				FF4F03BE2ADEFA0300BE7BAC /* HTTP+Protocols.swift in Sources */,
 				FF4F03C42ADEFD4B00BE7BAC /* APIProviderNetworking.swift in Sources */,
+				FF9A04DB2B02C05900FE7C71 /* Environment.swift in Sources */,
 				FF800BA92ADF2BEF00C70037 /* SampleViewModel.swift in Sources */,
 				FF6D60812AE6CFA200CB7FB2 /* PokemonListRow.swift in Sources */,
 				FF4F03C22ADEFAD500BE7BAC /* Constants.swift in Sources */,
