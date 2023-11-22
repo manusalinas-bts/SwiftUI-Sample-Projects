@@ -20,8 +20,6 @@ struct StartTab: View {
     }
 }
 
-struct StartTab_Previews: PreviewProvider {
-    static var previews: some View {
-        StartTab()
-    }
+#Preview {
+    StartTab()
 }
